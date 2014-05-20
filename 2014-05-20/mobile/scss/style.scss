@@ -20,7 +20,7 @@ img{
 			right: 0;
 			.copy, .logo, .chart-info{
 				position: absolute;
-				left: 14px
+				left: 14px;
 			}
 			.copy{
 				
@@ -34,7 +34,6 @@ img{
 				
 				bottom:12.5px;
 				width: 98px;
-				
 				img{
 					display: block;
 					width: 100%;
@@ -44,9 +43,7 @@ img{
 				top:43px;
 				left:0;
 				bottom:0;
-				
 				right:0;
-				
 				.chart{
 					position: absolute;
 					top:0px;
@@ -86,6 +83,7 @@ img{
 		background-size: cover;
 	}
 	.circle {
+		position: absolute;
 		width: 54px;
 		height: 54px;
 		border-radius: 50%;
@@ -101,10 +99,10 @@ img{
 
 		-webkit-transform-origin: 50%;
 		transform-origin:50%;
-		position: absolute;
+		
 		z-index: 1;
-		right: 13px;
-		bottom:13px;
+		right: 12px;
+		bottom:12px;
 	
 		&.zoom {
 		  opacity: 0;
