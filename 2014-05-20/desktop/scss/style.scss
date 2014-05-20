@@ -1,12 +1,131 @@
 body {
 	margin: 0;
 }
+img{
+	display: inline-block;
+}
 #qzad {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 480px;
 	min-width: 720px;
 	max-width: 1100px;
 	overflow: hidden;
-	background-color: white;
+	background-color: black;
+	border: 1px solid #000;
+	@for $i from 1 through 4{
+		.frame#{$i}{
+			position: absolute;
+			top:0;
+			left:0;
+			bottom:0;
+			right: 0;
+			.copy, .logo, .chart-info{
+				position: absolute;
+				left: 4.09090909091%;
+			}
+			.copy{
+				
+				top:45px;
+				width:76.6363636364%;
+				
+				img{
+					width: 100%;
+				}
+			}
+			.logo{
+				//top:383px;
+				bottom:40px;
+				width: 24.6363636364%;
+				img{
+					display: block;
+					width: 100%;
+				}
+			}
+			.chart-info{
+				top:168px;
+				bottom:0;
+				right:0;
+
+				width: 100%;
+			
+				.chart{
+					position: absolute;
+					width: 55.6363636364%;
+				}
+				.chart-legend, .chart-source{
+					position: absolute;
+					left:55.6363636364%;
+				}
+				.chart-legend{
+					top:0px;
+					width:40.4545454545%;
+				}
+				.chart-source{
+					
+					top:182px;
+					width: 25.8181818182%;
+
+				}
+			}
+		}
+	}
+	.frame1{
+		.cta{
+			width: 120px;
+		}
+	}
+
+	.cta, .cta-bg{
+		position: absolute;
+		z-index: 11;
+		display: block;
+
+		//width: 11.0909090909%;
+		width: 109px;
+		right: 3.27272727273%;
+		bottom:17px;
+		height: 109px;
+		
+		
+		img{
+			margin-top: 30px;
+			display: inline-table;
+			vertical-align: middle;
+		}
+	}
+	.cta-bg{
+		
+		background: url(../images/cta-bg.png) center center no-repeat;
+		background-size: cover;
+	}
+	.circle {
+		width: 108px;
+		height: 108px;
+		border-radius: 50%;
+		border: 2px solid #49565e;
+		-webkit-transition: all 2s linear;
+		-webkit-transform: scale(1);
+		-webkit-transform-origin: 50%;
+		//-webkit-transform: scale(1.1);
+		position: absolute;
+		z-index: 1;
+		right: 3.27272727273%;
+		top:354px;
+		//bottom: 17px;
+		
+		  &.zoom {
+			  opacity: 0;
+			 // border: 1px solid #49565e;
+			  -webkit-transform: scale(1.5);
+			}
+	}
+	.cta-external{
+		position: absolute;
+		bottom:45px;
+		right:3.18181818182%;
+	}
+	.hidden{
+		display: none;
+	}
 }
