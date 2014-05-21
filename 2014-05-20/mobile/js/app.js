@@ -73,6 +73,7 @@ var App = function() {
 				$('.circle').remove();
 				currentFrame.addClass('hidden').hide();
 				$('.cta-bg, .circle').hide();
+				clearInterval(interval);
 				$('.'+goTo).fadeIn(250).removeClass('hidden');
 			}
 			
