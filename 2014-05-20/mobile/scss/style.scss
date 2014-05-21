@@ -58,7 +58,7 @@ img{
 		.cta{
 			
 			width: 62.5px;
-		
+			
 			img{
 				width: 100%;
 			}
@@ -104,12 +104,12 @@ img{
 		z-index: 1;
 		right: 12px;
 		bottom:12px;
-	
+		
 		&.zoom {
-		  opacity: 0;
-		  -webkit-transform: scale(1.5);
-		  -moz-transform: scale(1.5);
-		  transform: scale(1.5);
+			opacity: 0;
+			-webkit-transform: scale(1.5);
+			-moz-transform: scale(1.5);
+			transform: scale(1.5);
 		}
 	}
 	.cta-external{
