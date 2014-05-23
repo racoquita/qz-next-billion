@@ -57,7 +57,7 @@ var App = function() {
 		
 	}
 	this.ctaClickHandler = function(e) {
-		for (var i = 4; i < 8; i++) {
+		for (var i = 4; i < 7; i++) {
 			imgs[i] = 'images/f'+i+'-chart.png';
 		};
 
@@ -69,7 +69,7 @@ var App = function() {
 			num = that.upnum(num);
 			var chart = $(e.target).parent('.frame3').find('img.chart').attr('src', imgs[num]);
 			
-			if(num == 8){
+			if(num == 7){
 				$('.circle').remove();
 				currentFrame.addClass('hidden').hide();
 				$('.cta-bg, .circle').hide();

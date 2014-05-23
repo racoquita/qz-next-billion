@@ -57,10 +57,14 @@ img{
 	.frame1{
 		.cta{
 			
-			width: 62.5px;
+			//width: 62.5px;
+			width: 100%;
 			
 			img{
-				width: 100%;
+				position: absolute;
+				right: 0px;
+				width: 62px;
+				//width: 100%;
 			}
 		}
 	}
@@ -77,6 +81,9 @@ img{
 			display: inline-table;
 			vertical-align: middle;
 		}
+	}
+	.cta{
+		width: 100%;
 	}
 	.cta-bg{
 		

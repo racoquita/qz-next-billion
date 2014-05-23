@@ -35,10 +35,11 @@ img { display: inline-block; }
 #qzad .frame4 .logo img { display: block; width: 100%; }
 #qzad .frame4 .chart-info { top: 43px; left: 0; bottom: 0; right: 0; }
 #qzad .frame4 .chart-info .chart { position: absolute; top: 0px; left: 14px; right: 15px; width: 298px; }
-#qzad .frame1 .cta { width: 62.5px; }
-#qzad .frame1 .cta img { width: 100%; }
+#qzad .frame1 .cta { width: 100%; }
+#qzad .frame1 .cta img { position: absolute; right: 0px; width: 62px; }
 #qzad .cta, #qzad .cta-bg { position: absolute; right: 12px; bottom: 13px; z-index: 11; display: block; width: 54px; height: 54px; }
 #qzad .cta img, #qzad .cta-bg img { margin-top: 15px; display: inline-table; vertical-align: middle; }
+#qzad .cta { width: 100%; }
 #qzad .cta-bg { background: url(../images/cta-bg.png) center center no-repeat; background-size: cover; }
 #qzad .circle { position: absolute; width: 54px; height: 54px; border-radius: 50%; border: 1px solid #49565e; -webkit-transition: all 2s linear; -moz-transition: all 2s linear; transition: all 2s linear; -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1); -webkit-transform-origin: 50%; transform-origin: 50%; z-index: 1; right: 12px; bottom: 12px; }
 #qzad .circle.zoom { opacity: 0; -webkit-transform: scale(1.5); -moz-transform: scale(1.5); transform: scale(1.5); }
