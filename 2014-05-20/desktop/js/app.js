@@ -1,6 +1,7 @@
 var App = function() {
 	var that = this;
 	var cta = $('.cta');
+	var f = $('.frame');
 	var frame;
 	var currentFrame;
 	var num = 3;
@@ -10,6 +11,7 @@ var App = function() {
 	var to=[];
 	this.on = function() {
 		cta.on('click', that.ctaClickHandler);
+		f.on('click', that.frameClickHandler);
 
 		that.createCircle();
 		interval = setInterval(function(){
@@ -51,30 +53,41 @@ var App = function() {
 		}
 	}
 	this.ctaClickHandler = function(e) {
-		for (var i = 4; i < 8; i++) {
-			imgs[i] = 'images/f'+i+'-chart.png';
-		};
-
 		currentFrame = $(e.target).parents('.frame');
-		var goTo = $(e.target).closest('a').attr('href');
-		
-		if (goTo == 'frame4') {
-			num = that.upnum(num);
-			var chart = $(e.target).parent('.frame3').find('img.chart').attr('src', imgs[num]);
-
-			if(num == 8){
-				$('.circle').remove();
-				currentFrame.addClass('hidden').hide();
-				$('.cta-bg, .circle').hide();
-				clearInterval(interval);
-				$('.'+goTo).fadeIn(250).removeClass('hidden');
-			}
-			
-		} else {
-			currentFrame.addClass('hidden').hide();
-			$('.'+goTo).fadeIn('250').removeClass('hidden');
-		}
-
+		that.changeFrame(currentFrame);
 		e.preventDefault();
+		e.stopPropagation();
+	}
+	this.frameClickHandler = function(e) {
+		currentFrame = $(e.target).closest('.frame');
+		that.changeFrame(currentFrame);
+		e.preventDefault();
+		e.stopPropagation();
+	}
+	this.changeFrame = function() {
+		if(num <= 7) {
+			var goTo = currentFrame.find('a.cta').attr('href');
+
+			for (var i = 4; i < 8; i++) {
+				imgs[i] = 'images/f'+i+'-chart.png';
+			};
+			
+			if (goTo == 'frame4') {
+				num = that.upnum(num);
+				var chart = currentFrame.find('img.chart').attr('src', imgs[num]);
+
+				if(num == 8){
+					$('.circle').remove();
+					currentFrame.addClass('hidden').hide();
+					$('.cta-bg, .circle').hide();
+					clearInterval(interval);
+					$('.'+goTo).fadeIn(250).removeClass('hidden');
+				}
+				
+			} else {
+				currentFrame.addClass('hidden').hide();
+				$('.'+goTo).fadeIn('250').removeClass('hidden');
+			}
+		}
 	}
 };

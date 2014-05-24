@@ -15,12 +15,14 @@ img{
 	border: 1px solid #000;
 	
 	@for $i from 1 through 4{
+
 		.frame#{$i}{
 			position: absolute;
 			top:0;
 			left:0;
 			bottom:0;
 			right: 0;
+
 			.copy, .logo, .chart-info{
 				position: absolute;
 				left: 4.09090909091%;
@@ -28,7 +30,7 @@ img{
 			.copy{
 				
 				top:45px;
-				width:76.6363636364%;
+				width:62%;
 				
 				img{
 					width: 100%;
@@ -61,11 +63,10 @@ img{
 					top:0px;
 					width:40.4545454545%;
 				}
-				.chart-source{
-					
-					top:182px;
-					width: 25.8181818182%;
-
+				.chart-source{					
+					bottom: 20px;
+					width: 411px;
+					left: 0;
 				}
 			}
 		}
@@ -76,7 +77,6 @@ img{
 		position: absolute;
 		z-index: 11;
 		display: block;
-		//width: 11.0909090909%;
 		width: 108px;
 		right: 4.09090909091%;
 		bottom:17px;
@@ -93,6 +93,11 @@ img{
 		.cta{
 			width: 120px;
 			right: 3.45454545455%;
+		}
+	}
+	.frame2{
+		.copy {
+			width: 86%;
 		}
 	}
 	.cta-bg{
