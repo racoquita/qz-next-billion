@@ -39,8 +39,6 @@ var App = function() {
 		
 	}
 	this.createCircle = function() {
-		
-
 		$('.circle').remove();
 
 		for(var i = 0; i < 3; i++) {
@@ -71,10 +69,10 @@ var App = function() {
 		e.stopPropagation();
 	}
 	this.changeFrame = function() {
-		if(num <= 7) {
+		if(num <= 6) {
 			var goTo = currentFrame.find('a.cta').attr('href');
 
-			for (var i = 4; i < 8; i++) {
+			for (var i = 4; i < 7; i++) {
 				imgs[i] = 'images/f'+i+'-chart.png';
 			};
 			
@@ -82,7 +80,7 @@ var App = function() {
 				num = that.upnum(num);
 				var chart = currentFrame.find('img.chart').attr('src', imgs[num]);
 
-				if(num == 8){
+				if(num == 7){
 					$('.circle').remove();
 					currentFrame.addClass('hidden').hide();
 					$('.cta-bg, .circle').hide();
@@ -95,5 +93,6 @@ var App = function() {
 				$('.'+goTo).fadeIn('250').removeClass('hidden');
 			}
 		}
+		if(num == 6) f.off();
 	}
 };

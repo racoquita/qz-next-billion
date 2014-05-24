@@ -89,5 +89,6 @@ var App = function() {
 				$('.'+goTo).fadeIn('250').removeClass('hidden');
 			}
 		}
+		if(num == 8) f.off();
 	}
 };
