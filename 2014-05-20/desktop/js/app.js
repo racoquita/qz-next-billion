@@ -28,7 +28,7 @@ var App = function() {
 		clearInterval(interval);
 
 		$('.frame').addClass('hide').hide();
-		$('.frame3').find('img.chart').attr('src', 'images/f'+num+'-chart.png')
+		$('.frame3').find('img.chart').attr('src', 'http://ads.quartz.cc/sponsors/house/next-billion/2014-05-20/desktop/images/f'+num+'-chart.png')
 		$('.frame1').removeClass('hide').show();
 		$('.circle').remove();
 	}
@@ -69,7 +69,7 @@ var App = function() {
 			var goTo = currentFrame.find('a.cta').attr('href');
 
 			for (var i = 4; i < 7; i++) {
-				imgs[i] = 'images/f'+i+'-chart.png';
+				imgs[i] = 'http://ads.quartz.cc/sponsors/house/next-billion/2014-05-20/desktop/images/f'+i+'-chart.png';
 			};
 			
 			if (goTo == 'frame4') {
