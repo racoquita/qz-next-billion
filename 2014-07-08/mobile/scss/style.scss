@@ -47,8 +47,8 @@ img{
 				.chart{
 					position: absolute;
 					top:0px;
-					left:14px;
-					right: 15px;
+					left:10px;
+					right: 13px;
 					width: 293px;
 				}	
 			}
@@ -67,7 +67,7 @@ img{
 			
 			img{
 				position: absolute;
-				right: 0px;
+				right: -4px;
 				width: 62px;
 				bottom:13px;
 				//width: 100%;
@@ -86,7 +86,7 @@ img{
 	}
 	.cta, .cta-bg{
 		position: absolute;
-		right: 12px;
+		right: 13px;
 		bottom:13px;
 		z-index: 11;
 		display: block;
