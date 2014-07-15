@@ -35,9 +35,11 @@ img { display: inline-block; }
 #qzad .frame4 .logo img { display: block; width: 100%; }
 #qzad .frame4 .chart-info { top: 44px; left: 0; bottom: 0; right: 0; }
 #qzad .frame4 .chart-info .chart { position: absolute; top: 0px; left: 10px; right: 13px; width: 293px; }
+#qzad .frame1 .logo { width: 200px; }
 #qzad .frame1 .copy { width: 267px; }
 #qzad .frame1 .cta { height: 100%; width: 100%; }
 #qzad .frame1 .cta img { position: absolute; right: -4px; width: 62px; bottom: 13px; }
+#qzad .frame2 .logo { width: 200px; }
 #qzad .frame2 .copy { width: 290px; }
 #qzad .frame3 .copy { width: 235px; }
 #qzad .cta, #qzad .cta-bg { position: absolute; right: 13px; bottom: 13px; z-index: 11; display: block; width: 54px; height: 54px; }
