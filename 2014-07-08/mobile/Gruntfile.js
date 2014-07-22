@@ -65,10 +65,10 @@ module.exports = function(grunt) {
     qzready: {
       deploy: {
         options: {
-          base: 'http://ads.quartz.cc/sponsors',
+          base: 'http://ads.qz.com/sponsors',
           client: 'house',
           campaign: 'next-billion',
-          date: '2014-05-20',
+          date: '2014-07-08',
           unit: 'mobile',
           version: '1',
           internal_scripts: [
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
           ],
           external_scripts: [
             'http://app.qz.com/js/vendor/jQuery-min.js',
-            'http://app.qz.com/js/frameMessager/min/frameMessager.min.2.5.48.js',
+            'http://app.qz.com/js/frameMessager/min/frameMessager.min.2.5.93.js',
             'http://app.qz.com/js/frameMessager/QZIX.js'
           ]
         }

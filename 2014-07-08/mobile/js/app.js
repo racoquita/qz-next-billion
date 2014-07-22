@@ -19,25 +19,26 @@ var App = function() {
 		}, 3000);
 	}
 	this.off = function() {
+		cta.off();
+		f.off();
+
 		num = 3;
+		counter = 0;
 
 		$.each(to, function(i, tout) {
 			clearTimeout(tout)
 		});
 
 		clearInterval(interval);
-		//http://ads.quartz.cc/sponsors/house/next-billion/2014-07-08/mobile/
 		
+		$('.cta-bg').show();
 		$('.frame').addClass('hide').hide();
-		$('.frame3').find('img.chart').attr('src', 'images/f'+num+'-chart.png')
+		$('.frame3').find('img.chart').attr('src', 'http://ads.qz.com/sponsors/house/next-billion/2014-07-08/mobile/images/f'+num+'-chart.png')
 		$('.frame1').removeClass('hide').show();
 		$('.circle').remove();
 	}
 	this.upnum = function (number) {
 		return number+1
-	}
-	this.resetAd = function(){
-		
 	}
 	this.createCircle = function() {
 		$('.circle').remove();
@@ -72,9 +73,9 @@ var App = function() {
 	this.changeFrame = function() {
 		if(num <= 6) {
 			var goTo = currentFrame.find('a.cta').attr('href');
-			//http://ads.quartz.cc/sponsors/house/next-billion/2014-07-08/mobile/
+
 			for (var i = 4; i < 7; i++) {
-				imgs[i] = 'images/f'+i+'-chart.png';
+				imgs[i] = 'http://ads.qz.com/sponsors/house/next-billion/2014-07-08/mobile/images/f'+i+'-chart.png';
 			};
 			
 			if (goTo == 'frame4') {
