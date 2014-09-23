@@ -1,6 +1,8 @@
 body {
 	margin: 0;
 }
+$cta-blue: #477b91;
+$cta-blue-hover: #315665;
 #qzad {
 	position: absolute;
 	width: 100%;
@@ -9,5 +11,52 @@ body {
 	max-width: 600px;
 	overflow: hidden;
 	background-color: white;
-	border: 1px solid #000;
+	.slideshow{
+		position:absolute;
+		top:0;
+		left:0;
+		right: 0;
+		bottom:0;
+		img{
+			position:absolute;
+			top:0;
+			height: 100%;
+		}
+	}
+	.content, .cta{
+		position:relative;
+		width: 45%; // 270px;
+		min-width: 270px;
+		margin: 0 auto;
+	}
+	.content{
+		background: rgba(0, 0, 0, 0.8);
+		z-index: 2;
+		img{
+			display: block;
+			width: 100%;
+		}
+		.copy{
+			width: 204px;
+			margin:0 auto;
+			img{
+				padding: 15px 0;
+				width: 100%;
+			}
+		}
+	}
+	.cta{
+		
+		top:7px;
+		z-index: 3;
+		height: 56px;
+		display: block;
+		background: $cta-blue url(../images/cta-text.png) center bottom no-repeat;
+		background-size: 173px;
+		&:hover{
+			background: $cta-blue-hover url(../images/cta-text.png) center bottom no-repeat;
+			background-size: 173px;
+		}
+	}
+	
 }
