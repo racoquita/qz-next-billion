@@ -1,7 +1,7 @@
 body { margin: 0; }
 
 #qzad { position: absolute; width: 100%; height: 520px; min-width: 768px; max-width: 1600px; overflow: hidden; }
-#qzad .content, #qzad .cta { position: absolute; left: 6.125%; width: 37.25%; min-width: 531px; }
+#qzad .content, #qzad .cta { position: absolute; left: 6.125%; width: 37.25%; min-width: 537px; }
 #qzad .slideshow { position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 1; }
 #qzad .slideshow img { display: block; position: absolute; right: 0; height: 100%; margin: 0 auto; }
 @media only screen and (min-width: 1101px) and (max-width: 1300px) { #qzad .slideshow img { right: -20%; } }
@@ -9,7 +9,7 @@ body { margin: 0; }
 @media only screen and (min-width: 768px) and (max-width: 1024px) { #qzad .slideshow img { right: -50%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { #qzad .slideshow img { right: -70%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { #qzad .slideshow img { right: -50%; } }
-#qzad .content { top: 95px; background: black; height: 282px; z-index: 2; width: 37.25%; min-width: 537px; }
+#qzad .content { top: 95px; background: black; height: 282px; z-index: 2; }
 #qzad .content img { display: block; width: 100%; }
 #qzad .content .lockup { width: 40.43624161%; float: left; padding: 28px 4.69798657718% 30px; }
 #qzad .content .copy { width: 40.43624161%; float: right; padding: 28px 4.69798657718% 48px; border-left: 1px solid #333333; }
