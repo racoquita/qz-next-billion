@@ -11,8 +11,8 @@ var App = function() {
 				"slides": slides,
 				"el": $('#slideshow'),
 				"fadeSpeed": 2000,
-				"delay": 1000,
-				"firstDelay": 1000
+				"delay": 2000,
+				"firstDelay": 2500
 		});
 		qzslideshow.activate();
 	}
