@@ -9,10 +9,10 @@ body { margin: 0; }
 @media only screen and (min-width: 768px) and (max-width: 1024px) { #qzad .slideshow img { right: -50%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { #qzad .slideshow img { right: -70%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { #qzad .slideshow img { right: -50%; } }
-#qzad .content { top: 95px; background: black; height: 282px; z-index: 2; }
+#qzad .content { top: 95px; background: black; z-index: 2; }
 #qzad .content img { display: block; width: 100%; }
 #qzad .content .lockup { width: 40.43624161%; float: left; padding: 28px 4.69798657718% 30px; }
-#qzad .content .copy { width: 40.43624161%; float: right; padding: 28px 4.69798657718% 48px; border-left: 1px solid #333333; }
+#qzad .content .copy { width: 40.43624161%; float: right; padding: 28px 4.69798657718% 30px; border-left: 1px solid #333333; }
 #qzad .content .copy img { margin-top: 24px; width: 100%; }
-#qzad .cta { z-index: 3; top: 381px; display: block; height: 56px; background: #477b91 url(../images/cta-text.png) center bottom no-repeat; background-size: 171.5px; }
+#qzad .cta { z-index: 3; top: 365px; display: block; height: 56px; background: #477b91 url(../images/cta-text.png) center bottom no-repeat; background-size: 171.5px; }
 #qzad .cta:hover { background: #315665 url(../images/cta-text-hover.png) center bottom no-repeat; background-size: 171.5px; }
