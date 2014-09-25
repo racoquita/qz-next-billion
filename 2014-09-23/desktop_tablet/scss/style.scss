@@ -62,7 +62,7 @@ $cta-blue-hover: #315665;
 		.lockup{
 			width: 40.43624161%;//241px;
 			float: left;
-			padding: 28px 4.69798657718% 30px;
+			padding: 28px 4.69798657718% 28px;
 
 			
 			@media only screen and (min-width : 768px) and (max-width : 1024px) {
@@ -74,7 +74,7 @@ $cta-blue-hover: #315665;
 		.copy{
 			width: 40.43624161%;//241px;
 			float: right;
-			padding: 28px 4.69798657718% 28px;
+			padding: 30px 4.69798657718% 30px;
 			border-left: 1px solid #333333;
 			@media only screen and (min-width : 768px) and (max-width : 1024px) {
 				width: 31.843575419%;
@@ -83,7 +83,7 @@ $cta-blue-hover: #315665;
 			}
 			
 			img{
-				margin-top: 24px;
+				margin-top: 15px;
 				width: 100%;
 				@media only screen and (min-width : 768px) and (max-width : 1024px) {
 					margin-top: 0;
