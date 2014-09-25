@@ -109,14 +109,15 @@ $cta-blue-hover: #315665;
 		top:365px;
 		display: block;
 		height: 56px;
-		background: $cta-blue url(../images/cta-text.png) center bottom no-repeat;
-		background-size: 171.5px;
+		background: $cta-blue url(../images/cta-text.png) center center no-repeat;
+		background-size: 152.5px;
 		@media only screen and (min-width : 768px) and (max-width : 1024px) {
 			top:384px;
 		}
 		&:hover{
-			background: $cta-blue-hover url(../images/cta-text-hover.png) center bottom no-repeat;
-			background-size: 171.5px;
+			background: $cta-blue-hover url(../images/cta-text.png) center center no-repeat;
+			//background-size: 171.5px;
+			background-size: 152.5px;
 		}
 	}
 }

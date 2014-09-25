@@ -20,6 +20,6 @@ body { margin: 0; }
 #qzad .content .copy img.hide { display: none; }
 @media only screen and (min-width: 768px) and (max-width: 1024px) { #qzad .content .copy img.tablet { display: block; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) { #qzad .content .copy img.desktop { display: none; } }
-#qzad .cta { z-index: 3; top: 365px; display: block; height: 56px; background: #477b91 url(../images/cta-text.png) center bottom no-repeat; background-size: 171.5px; }
+#qzad .cta { z-index: 3; top: 365px; display: block; height: 56px; background: #477b91 url(../images/cta-text.png) center center no-repeat; background-size: 152.5px; }
 @media only screen and (min-width: 768px) and (max-width: 1024px) { #qzad .cta { top: 384px; } }
-#qzad .cta:hover { background: #315665 url(../images/cta-text-hover.png) center bottom no-repeat; background-size: 171.5px; }
+#qzad .cta:hover { background: #315665 url(../images/cta-text.png) center center no-repeat; background-size: 152.5px; }
