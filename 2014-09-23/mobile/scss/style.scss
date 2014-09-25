@@ -51,11 +51,11 @@ $cta-blue-hover: #315665;
 		z-index: 3;
 		height: 56px;
 		display: block;
-		background: $cta-blue url(../images/cta-text.png) center bottom no-repeat;
-		background-size: 173px;
+		background: $cta-blue url(../images/cta-text.png) center center no-repeat;
+		background-size: 152.5px;
 		&:hover{
-			background: $cta-blue-hover url(../images/cta-text.png) center bottom no-repeat;
-			background-size: 173px;
+			background: $cta-blue-hover url(../images/cta-text.png) center center no-repeat;
+			background-size: 152.5px;
 		}
 	}
 	

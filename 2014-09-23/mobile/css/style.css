@@ -8,5 +8,5 @@ body { margin: 0; }
 #qzad .content img { display: block; width: 100%; }
 #qzad .content .copy { width: 204px; margin: 0 auto; }
 #qzad .content .copy img { padding: 15px 0; width: 100%; }
-#qzad .cta { top: 7px; z-index: 3; height: 56px; display: block; background: #477b91 url(../images/cta-text.png) center bottom no-repeat; background-size: 173px; }
-#qzad .cta:hover { background: #315665 url(../images/cta-text.png) center bottom no-repeat; background-size: 173px; }
+#qzad .cta { top: 7px; z-index: 3; height: 56px; display: block; background: #477b91 url(../images/cta-text.png) center center no-repeat; background-size: 152.5px; }
+#qzad .cta:hover { background: #315665 url(../images/cta-text.png) center center no-repeat; background-size: 152.5px; }
